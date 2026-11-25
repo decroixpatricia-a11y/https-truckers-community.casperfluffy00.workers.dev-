@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="nl"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#080c16" name="theme-color"/><title>TRUCKERS COMMUNITY — Japan Neon Truckstop</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#070b13;--panel:#101725;--red:#ff334f;--blue:#43cfff;--text:#f4f6fc;--muted:#a5b2c6}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}body:before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9;background-image:radial-gradient(#fff4 1px,transparent 1px);background-size:100px 120px;opacity:.09}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}header{position:sticky;top:0;z-index:20;background:#080c17e8;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff18}.nav{max-width:1240px;margin:auto;padding:15px 22px;display:flex;align-items:center;gap:22px;justify-content:space-between}.brand{font:900 25px 'Barlow Condensed';letter-spacing:1px;white-space:nowrap}.brand span{color:var(--red)}nav{display:flex;align-items:center;gap:23px;font-size:13px;font-weight:700;color:#d7dfef}nav a:hover{color:var(--blue)}.btn{border:1px solid #ffffff28;border-radius:10px;padding:13px 20px;font-weight:800;background:#ffffff10;color:white;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px #ff334f44}.primary{background:linear-gradient(115deg,#fa2e48,#b70f31);border-color:#ff7180;box-shadow:0 0 25px #ed224955}.secondary{background:linear-gradient(110deg,#153b63,#0b7296);border-color:#3dd2ff88}.hero{min-height:700px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;isolation:isolate;padding:75px 20px 105px;background:linear-gradient(90deg,#080b16d9,#090e1a48,#080b16d0),linear-gradient(0deg,#080b13 0%,transparent 42%),url('japan-trucks.webp') center center/cover}.hero:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 25% 50%,#ec164722,transparent 42%),radial-gradient(ellipse at 78% 42%,#139cfa28,transparent 42%);z-index:-1;animation:glow 8s ease-in-out infinite alternate}.hero-inner{max-width:1000px;position:relative}.eyebrow{font-size:12px;font-weight:900;letter-spacing:5px;color:#9ae7ff;text-shadow:0 0 15px #16b5ff}.crest{font-size:65px;filter:drop-shadow(0 0 24px #ff3158);margin-bottom:5px}.hero h1{font:900 clamp(64px,10vw,142px)/.78 'Barlow Condensed',Impact,sans-serif;letter-spacing:1px;margin:26px 0 23px;text-shadow:0 4px 0 #431122,0 8px 0 #15101b,0 14px 28px #000,0 0 55px #f42e4c80}.hero h1 span{display:block;background:linear-gradient(#fff 5%,#e2e7f3 40%,#aab7d4 55%,#fff 70%,#b1b9cb);-webkit-background-clip:text;background-clip:text;color:transparent}.hero h1 em{display:block;font-style:normal;font-size:.76em;color:#ff405d;text-shadow:0 3px #630d24,0 8px 30px #000,0 0 40px #ff224e}.jp{font-weight:800;letter-spacing:8px;color:#ffd6dc}.lead{max-width:680px;margin:20px auto 28px;line-height:1.8;color:#e3e8f5;font-size:16px;text-shadow:0 2px 9px #000}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.tag{margin-top:22px;color:#b7d3e8;font-size:12px;letter-spacing:3px;font-weight:800}.wrap{max-width:1200px;margin:auto;padding:0 22px}.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin-top:-56px;position:relative;z-index:3}.tile,.panel{background:linear-gradient(145deg,#182137f2,#0a101df5);border:1px solid #ffffff20;border-radius:16px;box-shadow:0 18px 38px #0007}.tile{padding:22px 14px;text-align:center;transition:.2s}.tile:hover{transform:translateY(-5px);border-color:var(--blue)}.tile .emoji{font-size:30px;display:block;margin-bottom:10px}.tile strong{font:800 19px 'Barlow Condensed';display:block}.tile small{display:block;color:var(--muted);font-size:11px;margin-top:5px}section{padding:95px 0}.section-title{font:900 clamp(35px,5vw,60px) 'Barlow Condensed';margin:0 0 12px;line-height:1}.section-title span{color:var(--red)}.sub{color:var(--muted);line-height:1.8;max-width:720px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.panel{padding:30px}.panel h3{font:800 26px 'Barlow Condensed';margin:10px 0}.panel p{color:var(--muted);line-height:1.7;font-size:14px}.panel .emoji{font-size:32px}.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.route-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.route-tabs button{border:1px solid #ffffff22;border-radius:8px;background:#172237;color:white;padding:10px 18px;font-weight:800}.route-tabs button.active{background:#c51f42;border-color:#ff6075}.route-name{font:900 36px 'Barlow Condensed';margin:8px 0}.route-path{color:#8cddff;font-weight:800}label{display:block;font-size:13px;color:#d5ddeb;margin:16px 0 7px;font-weight:700}input,select{width:100%;padding:14px 15px;border-radius:9px;border:1px solid #52617b;background:#080f1c;color:#fff;outline:none}input:focus,select:focus{border-color:var(--blue)}.output{white-space:pre-wrap;line-height:1.7;overflow-wrap:anywhere;color:#cdeaff;background:#070d18;border:1px dashed #5c7c99;border-radius:10px;padding:16px;margin-top:15px;min-height:70px}.faq details{border-bottom:1px solid #ffffff25;padding:17px 0}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted);line-height:1.8}.banner{background:linear-gradient(90deg,#431026,#0b2440);border:1px solid #f64c6477;border-radius:18px;padding:35px;margin-top:25px}.foot{border-top:1px solid #ffffff22;padding:30px 0;color:var(--muted);text-align:center;font-size:13px}.sakura{position:absolute;top:-30px;left:var(--x);font-size:var(--s);opacity:.7;animation:fall var(--d) linear infinite;animation-delay:var(--delay);pointer-events:none}.mobile{display:none}@keyframes fall{to{transform:translate(110px,780px) rotate(360deg);opacity:0}}@keyframes glow{to{opacity:.5;filter:hue-rotate(15deg)}}@media(max-width:850px){nav{display:none}.mobile{display:inline-flex}.quick{grid-template-columns:repeat(2,1fr)}.cards,.split{grid-template-columns:1fr}.hero{min-height:670px}.hero h1{font-size:clamp(60px,14vw,100px)}.jp{letter-spacing:3px}.tile:last-child{grid-column:1/-1}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
+
+/* JAPAN ULTIMATE — layout and effects */
+:root{--bg:#050710;--panel:#0b1020;--red:#ff2549;--blue:#16baff;--muted:#b7c2d8}
+body{background:radial-gradient(ellipse at 80% 3%,#11294d 0,transparent 38%),radial-gradient(ellipse at 8% 45%,#430b23 0,transparent 30%),#050710}
+header{background:linear-gradient(90deg,#070a14f7,#090a17f0);border-bottom:1px solid #f13b6a80;box-shadow:0 0 26px #ff174326,0 3px 0 #00b8ff24}
+.brand{font-size:29px;letter-spacing:1.2px;text-shadow:0 0 18px #e7334b66}.brand span{text-shadow:0 0 14px #ff3059aa}
+.nav{max-width:1450px}.btn{border-radius:8px;clip-path:polygon(5% 0,100% 0,100% 82%,95% 100%,0 100%,0 18%);letter-spacing:.1px}
+.primary{background:linear-gradient(125deg,#ff3959,#a50727);box-shadow:inset 0 0 15px #ff829044,0 0 20px #f5215880}
+.secondary{background:linear-gradient(125deg,#1461a3,#072344);box-shadow:inset 0 0 15px #4fd9ff66,0 0 20px #00aaff88}
+.hero{min-height:735px;justify-content:flex-start;text-align:left;padding:90px max(5vw,22px) 128px;overflow:hidden;background-image:linear-gradient(90deg,#050711 0%,#050711 14%,#050711f5 28%,#050711c7 40%,#05071118 67%,#05071100 100%),linear-gradient(0deg,#050710 0%,transparent 35%),url('japan-trucks.webp');background-position:center,center,center;background-size:cover,cover,cover}
+.hero:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 82% 55%,#009dff18,transparent 42%),linear-gradient(0deg,#ff183a0d,transparent 35%);animation:atmosphere 7s ease-in-out infinite alternate}
+.hero-inner{max-width:610px;margin-left:max(1vw,8px);z-index:1}.eyebrow{font-size:11px;letter-spacing:3.5px;color:#89e5ff;text-shadow:0 0 18px #0ac9ff}
+.crest{font-size:39px;margin:15px 0 4px;text-shadow:0 0 18px #ff234e}
+.hero h1{font-size:clamp(75px,7.2vw,119px);line-height:.79;margin:16px 0 15px;letter-spacing:1.5px;filter:drop-shadow(0 0 12px #000)}
+.hero h1 span{background:linear-gradient(#fff 3%,#e4eaff 24%,#6c849f 44%,#fff 54%,#7588a4 78%,#f5faff 96%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 4px 0 #080d20)}
+.hero h1 em{font-size:.68em;color:#ff3556;-webkit-text-stroke:1px #ff8190;text-shadow:0 3px #62081f,0 7px #20020b,0 0 26px #ff123a9c}
+.hero-line{display:inline-block;margin:12px 0 5px;padding:7px 14px;background:linear-gradient(90deg,#a00d3070,#09264d75);border-left:3px solid #ff3556;border-right:3px solid #22c6ff;color:#f8d9e6;font-weight:900;font-size:12px;letter-spacing:2.5px}
+.jp{font-size:14px;letter-spacing:4px;color:#ffcad9;text-shadow:0 0 16px #f32e61}.lead{margin:20px 0 23px;max-width:500px;color:#fff;line-height:1.7;text-shadow:0 2px 10px #000,0 0 20px #000;font-size:15px}
+.actions{justify-content:flex-start}.actions .btn{padding:15px 20px}.tag{letter-spacing:1.4px;font-size:11px;color:#d6eaff}.tag b{color:#ff385a}
+.quick{margin-top:-70px;gap:14px;max-width:1360px;margin-left:auto;margin-right:auto}.tile{background:linear-gradient(135deg,#1a0b1cfa,#080c19fa 52%,#071d34fa);border:1px solid #ff3b66aa;box-shadow:inset 0 0 12px #ff3e4d22,0 0 14px #ff204c4d,0 18px 32px #000a;border-radius:10px;clip-path:polygon(9% 0,100% 0,100% 80%,91% 100%,0 100%,0 20%);padding:23px 12px;min-height:130px}
+.tile:nth-child(even){border-color:#29bdff99;box-shadow:inset 0 0 12px #2c9fff25,0 0 14px #189bff42,0 18px 32px #000a}.tile:hover{box-shadow:0 0 28px #ff315f88,0 0 12px #12bcff88;transform:translateY(-7px)}.tile .emoji{filter:drop-shadow(0 0 9px #ff416b)}.tile strong{font-size:21px}.tile small{font-size:12px}
+section{position:relative}section:before{content:'';position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,#f43d70a8,#23baff9c,transparent)}.panel{border-color:#fa41644b;background:linear-gradient(145deg,#15162af7,#080d1df7);box-shadow:0 0 24px #fc21411a,0 16px 35px #0009}.panel:hover{border-color:#36baff77}.section-title{text-shadow:0 0 18px #fc3c4b25}.banner{box-shadow:0 0 30px #e5234b25}
+@keyframes atmosphere{from{opacity:.65;filter:saturate(1)}to{opacity:1;filter:saturate(1.35)}}
+@media(max-width:900px){.hero{background-image:linear-gradient(90deg,#050711f5 0%,#050711df 48%,#05071155 100%),linear-gradient(0deg,#050710,transparent 35%),url('japan-trucks.webp');min-height:700px}.hero-inner{max-width:600px}.hero h1{font-size:clamp(67px,12vw,105px)}}
+@media(max-width:560px){.hero{padding:85px 18px 125px;min-height:690px;background-position:center,center,64% center}.hero h1{font-size:clamp(61px,15vw,83px)}.hero-inner{margin:0}.hero-line{font-size:10px;letter-spacing:1px}.lead{font-size:14px}.quick{margin-top:-85px}.tile{min-height:120px}.nav{padding:12px 15px}.brand{font-size:21px}.nav>.btn{font-size:11px;padding:11px}.eyebrow{letter-spacing:2px}}
+
+/* TRUCKSTOP CAFE */
+.truckstop{background:radial-gradient(ellipse at 85% 25%,#78221d55,transparent 45%),linear-gradient(145deg,#080b13,#18121a 58%,#071626);overflow:hidden}.truckstop-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:stretch;margin-top:28px}.cafe-scene{min-height:370px;border-radius:20px;position:relative;overflow:hidden;border:1px solid #ff7d4d77;background:linear-gradient(0deg,#070910e8,transparent 65%),url('japan-trucks.webp') 76% center/cover;box-shadow:0 0 36px #ff512833}.cafe-scene:after{content:'☕ TRUCKSTOP • OPEN 24/7';position:absolute;bottom:22px;left:20px;font:900 26px 'Barlow Condensed',sans-serif;color:#fff;text-shadow:0 0 12px #ff4d39,0 2px 8px #000}.cafe-feature{padding:28px;background:linear-gradient(135deg,#20131c,#101a2d);border:1px solid #ff795955;border-radius:20px}.cafe-feature h3{font:900 34px 'Barlow Condensed';margin:0 0 10px}.cafe-feature p{line-height:1.8;color:#cbd5e6}.cafe-perks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.cafe-perks span{padding:14px;border-radius:10px;background:#ffffff0b;border:1px solid #ffffff22;font-weight:700;font-size:13px}.cafe-note{font-size:12px;color:#9aa8bd!important}@media(max-width:850px){.truckstop-layout{grid-template-columns:1fr}.cafe-scene{min-height:260px}}
+
+/* Interactive screenshot-matched neon landing page */
+.showcase{display:none;position:relative;width:100%;aspect-ratio:1754/896;isolation:isolate;background:#080713}
+.showcase img{width:100%;height:100%;object-fit:cover;display:block}
+.showcase a.hot{position:absolute;display:block;border-radius:12px;outline-offset:2px}
+.showcase a.hot:focus-visible{outline:3px solid #6ad9ff;background:#3bc8ff30}
+.showcase a.hot:hover{background:#ffffff13;box-shadow:inset 0 0 20px #ffffff28}
+.showcase .cafe-cta{position:absolute;right:4%;top:72%;padding:12px 22px;color:#fff;font-weight:900;background:linear-gradient(110deg,#d61b45,#57152f);border:1px solid #ff829b;border-radius:9px;box-shadow:0 0 18px #ff2d62,0 0 32px #ff174c55;text-shadow:0 0 8px #fff7;z-index:2}
+.showcase .cafe-cta:hover{transform:translateY(-3px);box-shadow:0 0 32px #ff2d62}
+@media(min-width:901px){header,.hero,.quick{display:none!important}.showcase{display:block}.showcase + .wrap{display:none}}
+@media(max-width:900px){.showcase{display:none}.hero{background-image:linear-gradient(90deg,#050711f5,#05071188),url('japan-trucks.webp')!important}.brand{font-size:23px}}
+
+/* CREW — JAPAN NEON */
+.crew-area{margin:0 0 55px}.crew-heading{font:900 clamp(32px,5vw,56px) 'Barlow Condensed',Impact,sans-serif;margin:12px 0}.crew-heading span{color:#ff3658;text-shadow:0 0 24px #ff285c88}.crew-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:28px 0}.crew-member{position:relative;overflow:hidden;min-width:0;padding:28px 12px;text-align:center;border:1px solid #ff315f9a;border-radius:14px;background:linear-gradient(135deg,#240b22,#080d20 60%,#082744);box-shadow:0 0 20px #ed2c4b35,inset 0 0 24px #ff315314;transition:transform .2s,box-shadow .2s}.crew-member:nth-child(even){border-color:#31c6ff9c;box-shadow:0 0 20px #11b8ff35,inset 0 0 24px #18baff14}.crew-member:hover{transform:translateY(-5px);box-shadow:0 0 28px #f52e6280}.crew-avatar{font-size:34px;margin-bottom:12px;filter:drop-shadow(0 0 10px #ff315f)}.crew-member strong{display:block;font-size:clamp(15px,2vw,21px);overflow-wrap:anywhere;color:#fff;text-shadow:0 0 13px #28baff55}.crew-member small{display:block;margin-top:9px;font-size:10px;letter-spacing:2px;font-weight:800;color:#95dfff}@media(max-width:650px){.crew-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.crew-member{padding:22px 8px}}
+
+/* JAPAN NIGHT 2.0 — cohesive redesign of every interior section */
+:root{--red:#ff315d;--blue:#29c9ff;--gold:#ffc78b;--muted:#c5d2e4}
+body{background:#060a13}
+section{padding:110px 0;overflow:hidden;isolation:isolate}
+section:before{display:none!important}
+section>.wrap{position:relative;z-index:2}
+section .eyebrow{display:inline-flex;align-items:center;gap:10px;background:#0c1a2abf;border:1px solid #3cbfff55;padding:9px 16px;border-radius:100px;letter-spacing:2.3px;font-size:11px;box-shadow:0 0 25px #08a8ff25}
+.section-title{font-size:clamp(46px,6.3vw,85px);line-height:.92;letter-spacing:.4px;margin:24px 0 18px;text-shadow:0 8px 25px #000b}
+.section-title span{color:#ff4265;text-shadow:0 0 32px #ff315b70}
+.sub{font-size:16px;color:#e2eaf8;max-width:760px}
+#over{background:radial-gradient(ellipse at 92% 16%,#14477672,transparent 44%),linear-gradient(135deg,#091527,#070b17 70%)}
+#over:after{content:'龍';position:absolute;right:-1vw;top:3%;font:900 clamp(170px,28vw,440px) serif;color:#22a8ff0d;transform:rotate(-9deg);z-index:0;pointer-events:none}
+.cards{gap:23px;margin-top:42px}
+.cards .panel{position:relative;min-height:285px;overflow:hidden;padding:36px 30px;border:1px solid #ffffff22;border-radius:22px;background:linear-gradient(155deg,#162941f2,#091322 68%,#0d0b1b);box-shadow:0 20px 45px #0008, inset 0 1px #ffffff25;transition:transform .25s,box-shadow .25s}
+.cards .panel:nth-child(2){background:linear-gradient(145deg,#2c1428,#0a1325 72%)}
+.cards .panel:nth-child(3){background:linear-gradient(145deg,#162a35,#0d1021 72%)}
+.cards .panel:hover{transform:translateY(-8px);box-shadow:0 25px 50px #000b,0 0 32px #2bbfff25}
+.cards .panel .emoji{display:grid;place-items:center;width:72px;height:72px;border-radius:20px;background:linear-gradient(135deg,#ff3a5e40,#2fbaff32);font-size:38px;box-shadow:inset 0 1px #ffffff44,0 0 26px #2caeff24}
+.cards .panel h3{font-size:32px;margin:22px 0 10px}
+.cards .panel p{font-size:15px;color:#cbd9ec}
+#konvooien{background:radial-gradient(ellipse at 7% 24%,#651b3770,transparent 42%),radial-gradient(ellipse at 90% 75%,#07588960,transparent 42%),#090e1b!important}
+#konvooien .split{margin-top:40px;gap:24px}
+#konvooien .panel,#chauffeur .panel{border-radius:23px;border:1px solid #6bb8ff45;padding:38px;background:linear-gradient(150deg,#16233ae8,#090f20f2);box-shadow:0 25px 60px #0009, inset 0 1px #ffffff20}
+#konvooien .split>.panel:first-child{min-height:420px;position:relative;background:linear-gradient(135deg,#101d31e8,#081020eb),url('japan-trucks.webp') center/cover}
+#konvooien .split>.panel:first-child:after{content:'🚛';position:absolute;bottom:25px;right:30px;font-size:80px;opacity:.22;filter:drop-shadow(0 0 20px #1abaff)}
+.route-tabs{margin:0 0 35px;gap:10px}
+.route-tabs button{border-radius:100px;background:#0a1a31e8;border:1px solid #3a7da0;padding:12px 20px;transition:.2s}
+.route-tabs button.active{background:linear-gradient(110deg,#ff315a,#b51438);box-shadow:0 0 24px #ff315a66}
+.route-name{font-size:clamp(38px,4vw,57px);color:#fff}
+.route-path{font-size:17px;color:#80ddff}
+label{font-size:13px;color:#e7edfa}
+input,select{border-radius:12px;background:#070d1ad9;border:1px solid #496d92;padding:15px 16px}
+.output{border:1px solid #316b90;background:#050c19;border-radius:14px}
+#gids{background:radial-gradient(ellipse at 75% 0%,#173e6670,transparent 44%),linear-gradient(145deg,#070c18,#101126 68%,#160c1a)}
+.faq{max-width:950px;margin:40px auto 0;display:grid;gap:15px}
+.faq details{border:1px solid #ffffff2a;border-radius:17px;padding:23px 26px;background:linear-gradient(110deg,#1b2036,#0b1425);box-shadow:0 12px 35px #0006;transition:background .2s}
+.faq details[open]{border-color:#4bc9ff8c;background:linear-gradient(110deg,#172f49,#151325);box-shadow:0 0 26px #24b9ff1e}
+.faq summary{font-size:17px;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:'+';font-size:28px;color:#63d7ff}
+.faq details[open] summary:after{content:'−';color:#ff5573}
+.faq p{color:#d2e0f1;font-size:15px}
+#truckstop{background:radial-gradient(ellipse at 16% 50%,#6d1a3980,transparent 45%),radial-gradient(ellipse at 86% 30%,#0b57817a,transparent 50%),#090b17}
+#truckstop .truckstop-layout{margin-top:40px;gap:28px;align-items:stretch}
+#truckstop .cafe-scene{min-height:430px;border-radius:24px;border:1px solid #ff547177;box-shadow:0 20px 60px #000b,0 0 45px #ff24502c;position:relative;overflow:hidden;background:linear-gradient(0deg,#05071077,transparent 55%),url('truckers-neon-showcase.webp') center/cover}
+#truckstop .cafe-scene:after{content:'☕  TRUCKSTOP CAFÉ  •  OPEN VOOR DE CREW';position:absolute;bottom:20px;left:20px;right:20px;padding:17px 15px;border-radius:14px;background:#071322e6;backdrop-filter:blur(10px);color:#fff;font:900 clamp(16px,2vw,26px) 'Barlow Condensed',sans-serif;letter-spacing:2px;text-align:center;text-shadow:0 0 18px #ff4468;box-shadow:0 0 28px #0009}
+#truckstop .cafe-feature{border-radius:24px;border:1px solid #ff668058;background:linear-gradient(145deg,#2a172a,#0b1828 70%);box-shadow:0 20px 60px #0008;padding:38px}
+#truckstop .cafe-feature h3{font-size:clamp(29px,3vw,44px);line-height:1.05;color:#fff;text-shadow:0 0 25px #ff3b5a5c}
+#truckstop .cafe-feature p{color:#d8e5f5;line-height:1.8}
+#truckstop .cafe-perks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:25px 0}
+#truckstop .cafe-perks span{background:#101f35;border:1px solid #64c5ff40;border-radius:12px;padding:14px;font-weight:700;color:#eaf4ff}
+#chauffeur{background:radial-gradient(ellipse at 80% 40%,#0a56785b,transparent 48%),radial-gradient(ellipse at 5% 60%,#581b3455,transparent 50%),#0a1020!important}
+#chauffeur .split{margin-top:40px;gap:32px}
+.banner{background:linear-gradient(125deg,#4b142d,#102b4b);border:1px solid #ff647b80;border-radius:22px;padding:38px;box-shadow:0 0 35px #ff315a22}
+.banner h3{font:900 32px 'Barlow Condensed'}
+#community{background:radial-gradient(ellipse at 50% 0%,#124d7570,transparent 47%),radial-gradient(ellipse at 20% 80%,#6a173660,transparent 40%),#080d1b}
+#community .crew-grid,#community .crew-list{gap:20px}
+#community .crew-card{border-radius:20px!important;border:1px solid #55baff5c!important;background:linear-gradient(145deg,#172b43,#101326 70%,#270e21)!important;box-shadow:0 15px 38px #0008,0 0 25px #138fff1a!important;transition:transform .25s,box-shadow .25s}
+#community .crew-card:hover{transform:translateY(-6px);box-shadow:0 25px 45px #0009,0 0 30px #ff326055!important}
+.btn{transition:transform .2s,filter .2s,box-shadow .2s}
+.btn:hover{filter:brightness(1.18)}
+@media(max-width:850px){section{padding:75px 0}.cards .panel{min-height:0}.section-title{font-size:clamp(42px,10vw,68px)}#konvooien .panel,#chauffeur .panel,#truckstop .cafe-feature{padding:25px}#truckstop .cafe-scene{min-height:300px}}
+@media(max-width:480px){#truckstop .cafe-perks{grid-template-columns:1fr}.faq details{padding:18px}.route-tabs button{padding:10px 12px}.section-title{overflow-wrap:anywhere}}
+
+
+/* FULL-SCENE JAPAN EDITION: same cinematic image-first approach as the top showcase. */
+#over,#konvooien,#gids,#truckstop,#chauffeur,#community,#recruiter{
+ position:relative!important;isolation:isolate!important;overflow:hidden!important;
+ background-color:#060c16!important;
+ background-size:cover!important;background-position:center center!important;
+ background-repeat:no-repeat!important;background-attachment:scroll!important;
+ padding-top:clamp(105px,12vw,190px)!important;
+ padding-bottom:clamp(100px,12vw,170px)!important;
+ min-height:790px!important;
+}
+#over{background-image:linear-gradient(90deg,rgba(2,7,17,.68),rgba(2,7,17,.13) 76%),url('sakura-temple.svg')!important}
+#konvooien{background-image:linear-gradient(90deg,rgba(2,7,17,.66),rgba(2,7,17,.10) 80%),url('midnight-convoy.svg')!important}
+#gids{background-image:linear-gradient(90deg,rgba(2,7,17,.66),rgba(2,7,17,.12) 80%),url('dragon-night.svg')!important}
+#truckstop{background-image:linear-gradient(90deg,rgba(2,7,17,.68),rgba(2,7,17,.06) 80%),url('truckers-neon-showcase.webp')!important}
+#chauffeur{background-image:linear-gradient(90deg,rgba(2,7,17,.74),rgba(2,7,17,.12) 85%),url('sakura-temple.svg')!important}
+#community{background-image:linear-gradient(90deg,rgba(2,7,17,.72),rgba(2,7,17,.10) 85%),url('japan-trucks.webp')!important}
+#recruiter{background-image:linear-gradient(90deg,rgba(2,12,13,.78),rgba(2,10,15,.12) 85%),url('dragon-night.svg')!important}
+#over:before,#konvooien:before,#gids:before,#truckstop:before,#chauffeur:before,#community:before,#recruiter:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(0deg,#030a16d9 0%,transparent 18%,transparent 82%,#030a16a8 100%)!important}
+#over>.wrap,#konvooien>.wrap,#gids>.wrap,#truckstop>.wrap,#chauffeur>.wrap,#community>.wrap,#recruiter>.wrap{position:relative;z-index:2}
+#over .section-atmosphere,#konvooien .section-atmosphere,#gids .section-atmosphere,#truckstop .section-atmosphere,#chauffeur .section-atmosphere,#community .section-atmosphere{display:none!important}
+#over .section-title,#konvooien .section-title,#gids .section-title,#truckstop .section-title,#chauffeur .section-title,#community .section-title,#recruiter .section-title,
+#community .crew-heading{font-size:clamp(55px,7.2vw,118px)!important;line-height:1.02!important;letter-spacing:-.025em!important;color:#f5faff!important;-webkit-text-stroke:1px #b8e7ff55;text-shadow:0 2px 0 #758ca5,0 5px 0 #314c6c,0 9px 0 #0b1d33,0 17px 19px #000e,0 0 45px #25baff55!important;filter:none!important}
+#over .section-title span,#konvooien .section-title span,#gids .section-title span,#truckstop .section-title span,#chauffeur .section-title span,#community .section-title span,#recruiter .section-title span,#community .crew-heading span{background:linear-gradient(#ffe1e7 0%,#ff7898 32%,#f82055 58%,#9a092d 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;color:transparent!important;-webkit-text-fill-color:transparent!important;filter:drop-shadow(0 6px 0 #570c2b) drop-shadow(0 14px 13px #000b)!important}
+#konvooien .section-title span,#chauffeur .section-title span{background:linear-gradient(#f5ffff,#84e9ff 35%,#18a9ed 65%,#075c9e)!important;background-clip:text!important;-webkit-background-clip:text!important}
+#recruiter .section-title span{background:linear-gradient(#eaffed,#6bff96 40%,#18b65d 75%,#066c37)!important;background-clip:text!important;-webkit-background-clip:text!important}
+#over .eyebrow,#konvooien .eyebrow,#gids .eyebrow,#truckstop .eyebrow,#chauffeur .eyebrow,#community .eyebrow,#recruiter .eyebrow{background:#061322ad!important;border:0!important;box-shadow:0 6px 28px #0008!important;backdrop-filter:blur(8px)}
+#over .panel,#konvooien .panel,#gids .panel,#truckstop .panel,#chauffeur .panel,#community .crew-member,#recruiter .recruiter-info{background:linear-gradient(150deg,#061321dc,#081226d6)!important;backdrop-filter:blur(11px);box-shadow:0 18px 45px #0008, inset 0 1px #ffffff24!important;border:1px solid #b5d7ff33!important}
+#over .panel:hover,#konvooien .panel:hover,#community .crew-member:hover{transform:translateY(-8px) perspective(900px) rotateX(2deg);box-shadow:0 24px 65px #000b,0 0 24px #ff426633!important}
+#truckstop .cafe-scene{background-image:linear-gradient(0deg,#050c17a6,transparent 55%),url('truckers-neon-showcase.webp')!important;background-size:cover!important}
+@media(max-width:850px){#over,#konvooien,#gids,#truckstop,#chauffeur,#community,#recruiter{min-height:0!important;padding:90px 0!important;background-position:65% center!important}#over .section-title,#konvooien .section-title,#gids .section-title,#truckstop .section-title,#chauffeur .section-title,#community .section-title,#recruiter .section-title{font-size:clamp(43px,10vw,76px)!important}}
+
+
+
+/* V19: distinct, self-contained scenes. Preserve showcase above. */
+html,body{overflow-x:clip;background:#081323}
+#over,#konvooien,#gids,#truckstop,#chauffeur,#community,#recruiter{
+ position:relative;isolation:isolate;min-height:0!important;height:auto!important;
+ padding:76px 0 85px!important;margin:0!important;
+ background-size:cover!important;background-position:center center!important;
+ background-repeat:no-repeat!important;background-attachment:scroll!important;
+ border:0!important;outline:0!important;box-shadow:none!important;
+ transform:none!important;filter:none!important;overflow:visible!important;
+}
+#over{background:linear-gradient(90deg,#22152b66,#22152b22),url('world-kyoto.svg') center/cover no-repeat!important}
+#konvooien{background:linear-gradient(90deg,#07102d66,#07102d22),url('world-tokyo.svg') center/cover no-repeat!important}
+#gids{background:linear-gradient(90deg,#280c1266,#280c1222),url('world-samurai.svg') center/cover no-repeat!important}
+#truckstop{background:linear-gradient(90deg,#26120b66,#26120b22),url('world-izakaya.svg') center/cover no-repeat!important}
+#chauffeur{background:linear-gradient(90deg,#08243866,#08243822),url('world-fuji.svg') center/cover no-repeat!important}
+#community{background:linear-gradient(90deg,#230d2f66,#230d2f22),url('world-dragon.svg') center/cover no-repeat!important}
+#recruiter{background:linear-gradient(90deg,#06271c66,#06271c22),url('world-emerald.svg') center/cover no-repeat!important}
+#over:before,#over:after,#konvooien:before,#konvooien:after,#gids:before,#gids:after,#truckstop:before,#truckstop:after,#chauffeur:before,#chauffeur:after,#community:before,#community:after,#recruiter:before,#recruiter:after{content:none!important;display:none!important}
+#over>.wrap,#konvooien>.wrap,#gids>.wrap,#truckstop>.wrap,#chauffeur>.wrap,#community>.wrap,#recruiter>.wrap{background:transparent!important;position:relative;z-index:1}
+#over .panel,#konvooien .panel,#gids details,#truckstop .cafe-feature,#chauffeur .panel,#community .crew-member,#recruiter .recruiter-info{background:rgba(4,15,31,.87)!important;backdrop-filter:none!important}
+#truckstop .cafe-scene,#recruiter .recruiter-visual{background-image:none!important;background-color:rgba(7,21,36,.75)!important}
+#over .approved-banner,#konvooien .approved-banner,#gids .approved-banner,#truckstop .approved-banner,#chauffeur .approved-banner,#community .approved-banner,#recruiter .approved-banner{margin:0 auto!important;max-width:1600px!important}
+#over .approved-banner img,#konvooien .approved-banner img,#gids .approved-banner img,#truckstop .approved-banner img,#chauffeur .approved-banner img,#community .approved-banner img,#recruiter .approved-banner img{width:100%!important;height:auto!important;object-fit:contain!important;display:block!important}
+@media(max-width:800px){#over,#konvooien,#gids,#truckstop,#chauffeur,#community,#recruiter{padding:45px 0 55px!important;background-position:center!important}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style><style>.crew-member strong{display:block;font-size:clamp(20px,2.3vw,28px);line-height:1.2;color:#fff;text-shadow:0 0 13px #ff365c88}.crew-member small{display:block;margin-top:10px;color:#84dfff;font-size:14px;letter-spacing:.5px;font-weight:800;overflow-wrap:anywhere}.crew-member:nth-child(even) strong{text-shadow:0 0 14px #1bbcffaa}</style><style>
+/* NIGHT HIGHWAY — immersive, cohesive styling for ALL sections */
+:root{--red:#ff3358;--blue:#3bd5ff;--gold:#ffd1a0}
+body{background:#060911}
+section{position:relative;min-height:620px;padding:118px 0 125px;overflow:hidden;background-color:#080c18!important}
+section::before{display:block!important;content:'';position:absolute;inset:0;top:0;left:0;right:0;height:auto;z-index:-1;pointer-events:none;background-size:cover;background-position:center;opacity:1}
+section::after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 80% 25%,#27c3ff1b,transparent 44%),radial-gradient(ellipse at 10% 80%,#f31d4e1b,transparent 42%)}
+section>.wrap{position:relative;z-index:2}
+#over{background:linear-gradient(95deg,#060b18ef 0%,#070d1bd8 46%,#070b17bb 100%),url('japan-trucks.webp') center 35%/cover fixed!important}
+#konvooien{background:linear-gradient(100deg,#090d1cf2,#08101bd9 48%,#10101dc9),url('truckers-neon-showcase.webp') 58% 48%/cover fixed!important}
+#gids{background:linear-gradient(110deg,#070c18ed,#101027dc),url('japan-trucks.webp') 83% center/cover fixed!important}
+#truckstop{background:linear-gradient(100deg,#170b16eb,#071323cf),url('truckers-neon-showcase.webp') 70% 70%/cover fixed!important}
+#chauffeur{background:linear-gradient(110deg,#070e1be9,#0b1021d5),url('japan-trucks.webp') 38% 65%/cover fixed!important}
+#community{background:linear-gradient(105deg,#090d1af0,#071224dc),url('truckers-neon-showcase.webp') 55% 30%/cover fixed!important}
+.section-atmosphere{position:absolute;right:3%;top:35px;font-size:clamp(100px,19vw,280px);line-height:1;opacity:.10;filter:drop-shadow(0 0 50px #22caff);transform:rotate(-12deg);pointer-events:none;z-index:0}
+.scene-caption{font:800 13px 'Inter',sans-serif;letter-spacing:4px;color:#ffb9c7;text-transform:uppercase;margin:18px 0 4px;text-shadow:0 0 15px #fa2c56}
+.section-title{font-size:clamp(48px,6.8vw,94px);max-width:1050px;text-transform:uppercase;line-height:.95;text-shadow:0 5px 12px #000,0 0 25px #ff315333}
+.section-title span{background:linear-gradient(100deg,#ff4e6b,#ffb4bf 55%,#59d9ff);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 15px #ff345355)}
+section .eyebrow{background:#07121edc;border:1px solid #4bd6ff99;box-shadow:0 0 24px #23bfff33, inset 0 0 15px #3bbcff18}
+section .sub{font-size:17px;color:#f0f5ff;text-shadow:0 2px 9px #000}
+.cards .panel,.panel,.crew-member,.cafe-feature{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:linear-gradient(145deg,#141d30eb,#090d1eea)!important;border:1px solid #3bc9ff77!important;box-shadow:0 15px 50px #000b,0 0 22px #23b9ff22,inset 0 1px #ffffff25!important}
+.cards .panel:nth-child(even),.crew-member:nth-child(even){border-color:#ff517b88!important;box-shadow:0 15px 50px #000b,0 0 22px #ff31552c!important}
+.cards .panel{min-height:310px;position:relative}
+.cards .panel:after{content:'';position:absolute;right:-25px;bottom:-25px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,#35d5ff2b,transparent 70%);pointer-events:none}
+.cards .panel h3,.cafe-feature h3,.panel h3{color:#fff;text-shadow:0 0 16px #ff386455}
+#konvooien .split>.panel:first-child{background:linear-gradient(135deg,#0a1021d9,#0a1121c9),url('japan-trucks.webp') 70% center/cover!important}
+#konvooien .split>.panel:first-child:after{content:'🚛';opacity:.3}
+#truckstop .cafe-scene{background:linear-gradient(0deg,#080b18b0,transparent 65%),url('truckers-neon-showcase.webp') 72% 60%/cover!important;min-height:460px;border:2px solid #ff4c7399;box-shadow:0 0 55px #ff2b5055,0 20px 50px #000b}
+#truckstop .cafe-feature{background:linear-gradient(135deg,#291521e8,#0b2232e8)!important}
+#truckstop .cafe-perks span{background:linear-gradient(115deg,#192a3de8,#1b1427e8);border:1px solid #5ecaff77;box-shadow:0 0 14px #2ecaff19}
+.faq details{background:linear-gradient(105deg,#142137e9,#171022e9);border:1px solid #3ec7ff77;box-shadow:0 10px 35px #0008}
+.faq details[open]{border-color:#ff5e84;background:linear-gradient(110deg,#25172eea,#0b2b42ea)}
+.crew-member{min-height:170px;padding:28px 12px;display:flex;flex-direction:column;justify-content:center}
+.crew-member strong{font:900 clamp(22px,2.5vw,34px) 'Barlow Condensed',sans-serif!important;letter-spacing:.5px}
+.crew-member small{font-size:14px!important;letter-spacing:1px!important}
+.crew-avatar{font-size:43px}
+.banner{backdrop-filter:blur(10px);border:1px solid #ff587b99}
+.foot{background:linear-gradient(90deg,#160b19,#081b2b);border-top:1px solid #ff527b77;color:#d9e5f6}
+.mobile-menu{display:none}
+@media(max-width:900px){section{padding:80px 0;min-height:0}#over,#konvooien,#gids,#truckstop,#chauffeur,#community{background-attachment:scroll!important}.section-atmosphere{font-size:110px;right:0;top:15px}.scene-caption{letter-spacing:2px}.section-title{font-size:clamp(43px,10vw,70px)}.mobile-menu{display:inline-flex;background:#11233b;border:1px solid #48caff;color:#fff;border-radius:8px;padding:9px 13px;font-weight:800}header nav.nav-open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#081425f5;padding:14px 25px;box-shadow:0 20px 35px #000a}header nav.nav-open a{padding:12px;border-bottom:1px solid #ffffff20}}
+@media(max-width:600px){.nav{gap:8px}.brand{font-size:18px}.nav>.btn{display:none}.crew-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.crew-member{min-height:145px}.scene-caption{font-size:10px}.cards .panel{min-height:0}#truckstop .cafe-scene{min-height:280px}}
+@media(prefers-reduced-motion:reduce){section{background-attachment:scroll!important}}
+</style><style>
+/* RECRUITER EDITION — complete functional overlay and green recruitment zone */
+.showcase{aspect-ratio:1648/928}.showcase img{object-fit:fill}
+.showcase a.hot{z-index:2}.showcase a.hot:hover{background:#52ff6920;box-shadow:inset 0 0 24px #5dff6a55}
+.recruiter-btn,.recruiter-tile{background:linear-gradient(125deg,#064d24,#031e13)!important;border:1px solid #55ff70!important;color:#eaffec!important;box-shadow:0 0 20px #31ff5c77,inset 0 0 18px #4dff4d24!important;text-shadow:0 0 8px #50ff6a}
+.recruiter-btn:hover,.recruiter-tile:hover{box-shadow:0 0 32px #31ff5ca0!important}
+.recruiter-nav{color:#74ff90!important}
+.recruiter-section{background:radial-gradient(ellipse at 85% 10%,#0c663455,transparent 48%),radial-gradient(ellipse at 8% 80%,#174c4b66,transparent 45%),#060d11}
+.recruiter-section .section-title span{color:#63ff82;text-shadow:0 0 28px #43ff7d77}
+.recruiter-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;margin-top:36px;align-items:stretch}
+.recruiter-visual{min-height:590px;display:flex;flex-direction:column;justify-content:flex-end;padding:35px;border-radius:24px;overflow:hidden;background:linear-gradient(0deg,#03120bea,#07151b20 65%),url('recruiter-design.webp') 10% 85%/auto 140% no-repeat;border:1px solid #4cff7388;box-shadow:0 0 38px #21ef522b}
+.recruiter-visual h3{font:900 clamp(48px,5vw,82px) 'Barlow Condensed',Impact,sans-serif;margin:12px 0;color:white;text-shadow:0 0 25px #5cff6d}
+.recruiter-visual p{color:#7dff96;font-weight:900;letter-spacing:3px}
+.recruiter-shield{font-size:55px;filter:drop-shadow(0 0 15px #4dff72)}
+.recruiter-info{padding:35px;border-radius:24px;border:1px solid #44ef7290;background:linear-gradient(145deg,#102a22,#091521 72%);box-shadow:0 0 35px #21ff4d20}
+.recruiter-info h3{font:900 40px 'Barlow Condensed',sans-serif;margin:0 0 12px}
+.recruiter-info p{color:#d7e9df;line-height:1.7}
+.recruiter-benefits{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}
+.recruiter-benefits span{padding:13px;background:#0d251d;border:1px solid #3cf57166;border-radius:12px;font-size:13px;font-weight:700}
+.recruiter-info textarea{width:100%;resize:vertical;min-height:105px;background:#070d1ad9;color:white;border:1px solid #496d92;border-radius:12px;padding:15px;font:inherit}
+.recruiter-info textarea:focus{outline:2px solid #50f777}
+.recruiter-info .btn{margin:12px 7px 0 0}
+.recruiter-disclaimer{font-size:12px!important;color:#a8c6b4!important}
+@media(max-width:900px){.recruiter-layout{grid-template-columns:1fr}.recruiter-visual{min-height:320px;background-size:cover;background-position:center}.nav>.recruiter-btn{display:none}}
+@media(min-width:901px){.showcase{display:block!important}}
+@media(max-width:600px){.recruiter-info{padding:20px}.recruiter-benefits{grid-template-columns:1fr}}
+</style><style>
+/* FIX: real independent buttons cover the flattened artwork buttons */
+.showcase{position:relative}
+.showcase-contact{position:absolute;z-index:5;left:74.1%;top:66%;width:24.4%;height:30.8%;box-sizing:border-box;background:linear-gradient(150deg,#06170ff9,#061017f9);border:1px solid #2fe76a;border-radius:12px;display:flex;flex-direction:column;align-items:stretch;justify-content:center;gap:clamp(7px,1vw,17px);padding:clamp(6px,1.2vw,20px);box-shadow:0 0 15px #30ff6755}
+.showcase-contact a{display:flex;align-items:center;justify-content:center;text-align:center;position:relative;z-index:6;min-height:38px;flex:0 0 auto;padding:clamp(5px,.8vw,13px) 5px;border-radius:12px;color:white;text-decoration:none;font-weight:900;font-size:clamp(8px,1.2vw,20px);line-height:1.2;transition:transform .2s,box-shadow .2s}
+.showcase-contact .contact-btn{background:linear-gradient(135deg,#08612c,#0b2518);border:2px solid #67ff82;box-shadow:0 0 16px #4cff65a6}
+.showcase-contact .join-btn{background:linear-gradient(135deg,#15283b,#0b1320);border:2px solid #8db3d5;box-shadow:0 0 12px #4a8dbd55}
+.showcase-contact a:hover,.showcase-contact a:focus-visible{transform:translateY(-2px);box-shadow:0 0 24px #59ff84aa}
+.recruiter-visual{background-image:linear-gradient(0deg,#03120bea,#07151b70 65%),url('truckers-neon-showcase.webp')!important;background-size:cover!important;background-position:center!important}
+.recruiter-info form .btn{display:block;width:100%;max-width:100%;box-sizing:border-box;text-align:center;margin:14px 0 0!important}
+@media(max-width:700px){.showcase-contact{top:65%;left:73%;height:33%;width:26%;gap:4px;padding:4px;border-radius:5px}.showcase-contact a{font-size:clamp(7px,1.8vw,12px);min-height:20px;padding:4px 2px;border-radius:5px;border-width:1px!important}}
+</style>
+<style id="v36-real-truck-photos">
+/* V36: all selectors scoped to the content sections; top showcase unchanged */
+main{width:100%!important;max-width:none!important;background:#0b1528!important;overflow:visible!important}
+main>section.unified-area{position:relative!important;isolation:isolate!important;box-sizing:border-box!important;width:100%!important;max-width:none!important;min-height:0!important;height:auto!important;padding:22px 18px!important;margin:0!important;border:0!important;outline:0!important;box-shadow:none!important;background-color:#0b1528!important;background-repeat:no-repeat!important;background-position:center center!important;background-size:cover!important;background-attachment:scroll!important;overflow:hidden!important}
+main>section.unified-area::before,main>section.unified-area::after,main>section.unified-area>.wrap::before,main>section.unified-area>.wrap::after,main>section.unified-area .section-atmosphere{display:none!important;content:none!important;background:none!important}
+main>section.unified-area>.wrap{position:relative!important;z-index:2!important;box-sizing:border-box!important;width:100%!important;max-width:1200px!important;margin:0 auto!important;padding:18px 22px!important;background:rgba(4,13,30,.57)!important;border:1px solid rgba(93,196,255,.28)!important;border-radius:16px!important;min-height:0!important;height:auto!important;box-shadow:0 12px 36px #0007!important}
+main>section.unified-area .section-title,main>section.unified-area .crew-heading{font-family:'Barlow Condensed',Impact,sans-serif!important;font-weight:900!important;font-size:clamp(34px,5vw,69px)!important;line-height:1.05!important;letter-spacing:.025em!important;text-transform:uppercase!important;color:#f4fbff!important;text-shadow:0 2px 0 #b4cfe2,0 5px 0 #344f6e,0 8px 0 #10192c,0 13px 19px #000e,0 0 22px #1e9fff77!important;filter:none!important;margin:6px 0 12px!important}
+main>section.unified-area .section-title span,main>section.unified-area .crew-heading span{color:#ff3e67!important;background:linear-gradient(180deg,#fff2f4 0%,#ff718f 23%,#c91e49 50%,#770f35 75%,#ff5579 100%)!important;background-clip:text!important;-webkit-background-clip:text!important;-webkit-text-fill-color:transparent!important;filter:drop-shadow(0 4px 0 #5c0d28) drop-shadow(0 8px 8px #000b) drop-shadow(0 0 8px #ff426d99)!important;text-shadow:none!important}
+main>section.unified-area .cards,main>section.unified-area .split,main>section.unified-area .truckstop-layout,main>section.unified-area .recruiter-layout{gap:12px!important;margin-top:12px!important}
+main>section.unified-area .panel,main>section.unified-area .crew-member,main>section.unified-area .banner,main>section.unified-area .cafe-feature,main>section.unified-area .recruiter-info,main>section.unified-area .faq details{min-height:0!important;margin:0!important;padding:17px!important;background:rgba(3,13,30,.88)!important;border:1px solid rgba(91,197,255,.46)!important;border-radius:14px!important;box-shadow:0 6px 20px #0008!important;backdrop-filter:none!important}
+main>section.unified-area .cafe-scene,main>section.unified-area .recruiter-visual{position:relative!important;display:block!important;min-height:230px!important;height:auto!important;aspect-ratio:16/9!important;background-color:#071425!important;background-repeat:no-repeat!important;background-size:contain!important;background-position:center center!important;border:1px solid #64b8ff66!important;border-radius:12px!important;overflow:hidden!important}
+main>section.unified-area .cafe-scene::before,main>section.unified-area .cafe-scene::after,main>section.unified-area .recruiter-visual::before,main>section.unified-area .recruiter-visual::after{display:none!important;content:none!important}
+main>section.unified-area .recruiter-visual .recruiter-shield,main>section.unified-area .recruiter-visual p{display:none!important}
+main>section.unified-area .crew-grid{gap:10px!important;margin:10px 0!important}
+main>section.unified-area .crew-member{padding:12px!important}
+main>section.unified-area .eyebrow{margin:0 0 5px!important}
+main>section.unified-area p{margin-top:7px;margin-bottom:9px}
+main>section.unified-area .section-head{margin-bottom:10px!important}
+main>section.unified-area input,main>section.unified-area select,main>section.unified-area textarea{max-width:100%}
+#truckstop .cafe-scene{background-image:url('area4-truckstop.webp')!important}
+#recruiter .recruiter-visual{background-image:url('recruiter-design.webp')!important}
+main>section.unified-area#over{background-image:linear-gradient(90deg,rgba(3,9,23,.67),rgba(3,9,23,.47)),url('area1-over-ons.webp')!important}
+main>section.unified-area#konvooien{background-image:linear-gradient(90deg,rgba(3,9,23,.67),rgba(3,9,23,.47)),url('area2-konvooien.webp')!important}
+main>section.unified-area#gids{background-image:linear-gradient(90deg,rgba(3,9,23,.67),rgba(3,9,23,.47)),url('area3-gids.webp')!important}
+main>section.unified-area#truckstop{background-image:linear-gradient(90deg,rgba(3,9,23,.67),rgba(3,9,23,.47)),url('area4-truckstop.webp')!important}
+main>section.unified-area#chauffeur{background-image:linear-gradient(90deg,rgba(3,9,23,.67),rgba(3,9,23,.47)),url('area5-chauffeur.webp')!important}
+main>section.unified-area#community{background-image:linear-gradient(90deg,rgba(3,9,23,.67),rgba(3,9,23,.47)),url('area6-community.webp')!important}
+main>section.unified-area#recruiter{background-image:linear-gradient(90deg,rgba(3,9,23,.67),rgba(3,9,23,.47)),url('area7-recruiter.webp')!important}
+@media(max-width:850px){main>section.unified-area{padding:12px 8px!important;background-position:center!important}main>section.unified-area>.wrap{padding:14px!important}main>section.unified-area .cards,main>section.unified-area .split,main>section.unified-area .truckstop-layout,main>section.unified-area .recruiter-layout{grid-template-columns:1fr!important}main>section.unified-area .section-title{font-size:clamp(31px,9vw,50px)!important}}
+</style><style id="v37-rebuild">
+/* V37: rebuilt content only, preserve header/showcase and original functionality */
+main {background:linear-gradient(145deg,#061523,#10243a 48%,#071320)!important;max-width:none!important;width:100%!important;overflow:visible!important}
+main>section.unified-area {background-image:none!important;background-color:transparent!important;background:linear-gradient(110deg,#071725,#0c2236 60%,#12253a)!important;background-size:auto!important;position:relative!important;min-height:0!important;height:auto!important;max-width:none!important;width:100%!important;padding:12px 16px!important;margin:0!important;overflow:visible!important;border:0!important;box-shadow:none!important;isolation:isolate!important}
+main>section.unified-area:nth-of-type(even){background:linear-gradient(115deg,#102036,#071725 65%,#172037)!important}
+main>section.unified-area:before,main>section.unified-area:after,main>section.unified-area>.wrap:before,main>section.unified-area>.wrap:after{content:none!important;display:none!important}
+main>section.unified-area>.approved-banner,main>section.unified-area>.section-atmosphere{display:none!important}
+main>section.unified-area>.poster-actions{position:relative!important;z-index:3!important;max-width:1120px!important;margin:0 auto!important;text-align:right!important;padding:0 10px!important;background:none!important}
+main>section.unified-area>.poster-actions a{position:static!important;display:inline-flex!important;padding:6px 12px!important;background:#102b43!important;border:1px solid #3683aa!important;border-radius:8px!important;color:#e7faff!important;font-size:12px!important}
+main>section.unified-area>.wrap{width:100%!important;max-width:1160px!important;min-height:0!important;height:auto!important;margin:0 auto!important;padding:16px 20px!important;background:linear-gradient(120deg,rgba(4,14,30,.94),rgba(9,30,48,.92))!important;border:1px solid #2e5770!important;border-radius:16px!important;box-shadow:0 9px 24px #0005!important;position:relative!important;z-index:2!important;overflow:visible!important}
+main>section.unified-area .v37-scene{display:block!important;float:right!important;clear:right!important;width:min(34%,355px)!important;max-width:355px!important;height:auto!important;margin:0 0 12px 20px!important;padding:0!important;background:#071523!important;border:1px solid #4aa1c7!important;border-radius:12px!important;overflow:hidden!important;box-shadow:0 10px 26px #0008!important}
+main>section.unified-area .v37-scene img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important}
+main>section.unified-area .section-title,main>section.unified-area .crew-heading{font-family:Impact,'Arial Black',sans-serif!important;font-weight:900!important;font-stretch:condensed!important;font-style:italic!important;text-transform:uppercase!important;letter-spacing:.025em!important;font-size:clamp(32px,4.7vw,63px)!important;line-height:1.12!important;margin:6px 0 12px!important;color:#eaf8ff!important;background:linear-gradient(180deg,#fff 0%,#d7f8ff 23%,#6cb9e9 45%,#e7fbff 52%,#4e87ad 58%,#0d3d69 86%,#091e3a 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;filter:drop-shadow(2px 3px 0 #315978) drop-shadow(4px 6px 0 #10283d) drop-shadow(6px 9px 0 #020b16) drop-shadow(0 0 10px #32c4ff77)!important;text-shadow:none!important;transform:none!important}
+main>section.unified-area .section-title span,main>section.unified-area .crew-heading span{background:linear-gradient(180deg,#fff6f8 0%,#ffb3c6 22%,#ff4b78 42%,#ffdae3 50%,#e32657 57%,#830b34 86%,#35071d 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;filter:drop-shadow(2px 3px 0 #a21b42) drop-shadow(4px 6px 0 #4c0928) drop-shadow(0 0 12px #ff356988)!important;text-shadow:none!important}
+main>section.unified-area .cards,main>section.unified-area .split,main>section.unified-area .truckstop-layout,main>section.unified-area .recruiter-layout{gap:12px!important;margin-top:12px!important}
+main>section.unified-area .panel,main>section.unified-area .crew-member,main>section.unified-area .banner,main>section.unified-area .cafe-feature,main>section.unified-area .recruiter-info,main>section.unified-area .faq details{min-height:0!important;background:rgba(3,13,29,.94)!important;border:1px solid #335b78!important;box-shadow:0 6px 16px #0005!important;padding:15px!important;border-radius:12px!important}
+main>section.unified-area .truck-spotlight{max-width:250px!important;margin-bottom:6px!important}
+main>section.unified-area .cafe-scene,main>section.unified-area .recruiter-visual{background:none!important;background-image:none!important;min-height:0!important;height:auto!important;aspect-ratio:auto!important;max-height:320px!important;overflow:hidden!important;border:1px solid #416b87!important}
+main>section.unified-area .cafe-scene img,main>section.unified-area .recruiter-visual img{display:block!important;object-fit:contain!important;object-position:center!important;max-height:300px!important;width:100%!important;height:auto!important;transform:none!important}
+main>section.unified-area .cafe-scene:before,main>section.unified-area .cafe-scene:after,main>section.unified-area .recruiter-visual:before,main>section.unified-area .recruiter-visual:after{content:none!important;display:none!important}
+main>section.unified-area .crew-grid{gap:10px!important;margin:10px 0!important}
+main>section.unified-area .crew-member{padding:12px!important}
+main>section.unified-area .wrap:after{content:''!important;display:block!important;clear:both!important}
+@media(max-width:800px){main>section.unified-area{padding:9px!important}main>section.unified-area>.wrap{padding:12px!important}main>section.unified-area .v37-scene{float:none!important;width:100%!important;max-width:100%!important;margin:0 0 12px!important}main>section.unified-area .cards,main>section.unified-area .split,main>section.unified-area .truckstop-layout,main>section.unified-area .recruiter-layout{grid-template-columns:1fr!important}main>section.unified-area .section-title{font-size:clamp(30px,9vw,52px)!important}}
+</style>
+<style id="v38-only-two-fixes">
+/* V38: titles and recruiter backdrop only; untouched header and other sections. */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+main>section.unified-area .section-title,
+main>section.unified-area .crew-heading {
+ font-family:'UnifrakturCook','Old English Text MT','Lucida Blackletter','Goudy Text MT',serif!important;
+ font-size:clamp(35px,4.6vw,66px)!important;
+ font-weight:700!important;font-style:normal!important;font-stretch:normal!important;
+ text-transform:none!important;letter-spacing:0!important;line-height:1.18!important;
+ color:#f3e8d1!important;
+ background:none!important;-webkit-text-fill-color:#f3e8d1!important;
+ text-shadow:1px 1px 0 #22121a,2px 3px 0 #4b2334,0 0 12px #ff46625e,0 6px 10px #000b!important;
+ transform:none!important;filter:none!important;
+}
+main>section.unified-area .section-title span,
+main>section.unified-area .crew-heading span {
+ font-family:inherit!important;font-weight:inherit!important;font-style:normal!important;
+ background:none!important;background-image:none!important;
+ -webkit-background-clip:initial!important;background-clip:initial!important;
+ -webkit-text-fill-color:#ffb8c0!important;color:#ffb8c0!important;
+ text-shadow:1px 2px 0 #581b32,2px 4px 0 #220a19,0 0 13px #ff315877!important;
+ transform:none!important;filter:none!important;
+}
+/* Do not reuse the green poster as a magnified background. The original recruiter photo stays visible as a normal image. */
+main>section.unified-area#recruiter,
+main>section.unified-area#recruiter.recruiter-section {
+ background-color:#071b25!important;
+ background-image:linear-gradient(180deg,rgba(3,12,29,.24) 0%,rgba(3,12,29,.35) 34%,rgba(3,12,29,.84) 72%,#071b25 100%),url('japan-scene-recruiter.webp')!important;
+ background-size:100% 100%,100% auto!important;
+ background-position:center top,center top!important;
+ background-repeat:no-repeat!important;
+}
+main>section.unified-area#recruiter>.wrap {background:linear-gradient(120deg,rgba(4,14,29,.70),rgba(10,31,42,.73))!important;}
+main>section.unified-area#recruiter .recruiter-visual {background:#061725!important;background-image:none!important;background-size:auto!important;}
+main>section.unified-area#recruiter .recruiter-visual img {width:100%!important;height:auto!important;object-fit:contain!important;transform:none!important;filter:none!important;}
+@media(max-width:600px){main>section.unified-area .section-title,main>section.unified-area .crew-heading{font-size:clamp(31px,8vw,46px)!important}}
+</style>
+<style id="v40-recruiter-continuous-background">
+/* Only recruiter section; no other area, heading or interaction is changed. */
+main>section.unified-area#recruiter,
+main>section.unified-area#recruiter.recruiter-section {
+ background-color:#071b25!important;
+ background-image:linear-gradient(90deg,rgba(3,12,29,.36),rgba(3,12,29,.26)),url('recruiter-continuous-v40.webp')!important;
+ background-repeat:no-repeat!important;
+ background-position:center top!important;
+ background-size:100% 100%!important;
+ background-attachment:scroll!important;
+}
+@media(max-width:900px){main [id].unified-area,.hero{scroll-margin-top:100px}}
+</style></head><body><header><div class="nav"><a class="brand" href="#home">🐉 TRUCKERS <span>COMMUNITY</span></a><nav><a href="#home">Home</a><a href="#over">Over ons</a><a href="#konvooien">Konvooien</a><a href="#gids">Truckergids</a><a href="#community">Community</a><a href="#truckstop">Truckstop Café</a><a class="recruiter-nav" href="#recruiter">🟢 Recruiter</a></nav><a class="btn primary" href="#chauffeur">Word chauffeur ↗</a><button aria-expanded="false" aria-label="Open navigatiemenu" class="mobile-menu" type="button">☰ Menu</button><a class="btn recruiter-btn" href="#recruiter">🟢 Recruiter</a></div></header><main><div class="showcase" id="home-showcase"><img alt="Truckers Community Japan neon met recruiter, truckstop café en vrachtwagens" src="recruiter-design.webp"/><a aria-label="Home" class="hot" href="#home-showcase" style="left:26.7%;top:1%;width:6.1%;height:10%"></a><a aria-label="Crew &amp; Community" class="hot" href="#community" style="left:33.5%;top:1%;width:9%;height:10%"></a><a aria-label="Konvooien" class="hot" href="#konvooien" style="left:44.2%;top:1%;width:7.5%;height:10%"></a><a aria-label="Truckstop Café" class="hot" href="#truckstop" style="left:53%;top:1%;width:10%;height:10%"></a><a aria-label="Truckergids" class="hot" href="#gids" style="left:63.7%;top:1%;width:8.4%;height:10%"></a><a aria-label="Aanmelden" class="hot" href="#chauffeur" style="left:73.1%;top:1%;width:8.2%;height:10%"></a><a aria-label="Recruiter" class="hot" href="#recruiter" style="left:82.7%;top:1%;width:13.5%;height:10%"></a><a aria-label="Crew &amp; Community" class="hot" href="#community" style="left:6%;top:47%;width:15%;height:18%"></a><a aria-label="Konvooien" class="hot" href="#konvooien" style="left:21%;top:47%;width:15%;height:18%"></a><a aria-label="Truckstop Café" class="hot" href="#truckstop" style="left:36%;top:47%;width:15%;height:18%"></a><a aria-label="Truckergids" class="hot" href="#gids" style="left:51%;top:47%;width:15%;height:18%"></a><a aria-label="Chauffeursaanmelding" class="hot" href="#chauffeur" style="left:66%;top:47%;width:15%;height:18%"></a><a aria-label="Recruiter" class="hot" href="#recruiter" style="left:81%;top:47%;width:16%;height:18%"></a><div aria-label="Contact en aanmelden" class="showcase-contact"><a class="contact-btn" href="#recruiter">🟢 CONTACT RECRUITER</a><a class="join-btn" href="#chauffeur">🚛 Aanmelden als Chauffeur</a></div></div><div class="hero" id="home"><div aria-hidden="true" id="petals"></div><div class="hero-inner"><div class="eyebrow">⛩ TRUCKERS COMMUNITY · JAPAN NIGHT EDITION ⛩</div><div class="crest">⛩️ <span style="font-size:.65em">龍</span></div><h1><span>TRUCKERS</span><em>COMMUNITY</em></h1><div class="hero-line">龍 · THE LEGENDARY TRUCKERS HUB · 龍</div><div class="jp">トラッカーズコミュニティ</div><p class="lead">Waar de weg nooit eindigt. Rijd samen in epische konvooien, ontdek nieuwe routes en bouw jouw truckerscrew op.</p><div class="actions"><a class="btn primary" href="#chauffeur">🚛 Word chauffeur</a><a class="btn secondary" href="#konvooien">🗺 Plan een konvooi</a><a class="btn" href="#community">✦ Naar community</a></div><div class="tag">⚡ EURO TRUCK SIMULATOR 2 <b>✦</b> AMERICAN TRUCK SIMULATOR ⚡</div></div></div><div class="wrap"><div class="quick"><a class="tile" href="#konvooien"><span class="emoji">🚛</span><strong>Konvooien</strong><small>Samen rijden</small></a><a class="tile" href="#community"><span class="emoji">⚔️</span><strong>Crew &amp; Community</strong><small>Ontmoet chauffeurs</small></a><a class="tile" href="#gids"><span class="emoji">🛟</span><strong>Support</strong><small>Veelgestelde vragen</small></a><a class="tile" href="#gids"><span class="emoji">📖</span><strong>Truckergids</strong><small>Tips voor onderweg</small></a><a class="tile" href="#over"><span class="emoji">🎮</span><strong>ETS2 &amp; ATS</strong><small>Alles wat je nodig hebt</small></a><a class="tile recruiter-tile" href="#recruiter"><span class="emoji">🛡️</span><strong>Recruiter</strong><small>Contact &amp; informatie</small></a></div></div><section class="unified-area" id="over"><div aria-label="Goedgekeurd ontwerp over" class="approved-banner"><img alt="TRUCKERS COMMUNITY — over Japanse truckersposter" decoding="async" loading="lazy" src="area1-over-ons.webp"/></div><div class="poster-actions"><a href="#konvooien">Bekijk konvooien</a></div><div aria-hidden="true" class="section-atmosphere">⛩️</div><div class="wrap"><figure class="v37-scene"><img alt="Japanse vrachtwagens – over" decoding="async" loading="lazy" src="japan-scene-over.webp"/></figure><div class="truck-spotlight"><img alt="Truck model SCANIA S770" decoding="async" loading="lazy" src="truck-model-1.webp"/><span>🚛 SCANIA S770 · JAPAN EDITION</span></div><div class="eyebrow">THE ROAD IS OUR HOME</div><div class="scene-caption">Japanse wegen · Legendarische ritten</div><h2 class="section-title">RIJD OP <span>JOUW MANIER</span></h2><p class="sub">Of je nu pas begint of al duizenden kilometers gereden hebt: hier vind je chauffeurs, routes en tips voor jouw volgende rit.</p><div class="cards"><article class="panel"><div class="emoji">🚚</div><h3>Samen in konvooi</h3><p>Plan een vertrekpunt, kies een route en vertrek samen met je crew.</p></article><article class="panel"><div class="emoji">🗾</div><h3>Eigen ritten</h3><p>Kies je favoriete truck, vracht en bestemming in ETS2 of ATS.</p></article><article class="panel"><div class="emoji">🌸</div><h3>Truckerscommunity</h3><p>Deel screenshots, wissel instellingen uit en help nieuwe chauffeurs.</p></article></div></div></section><section class="unified-area" id="konvooien"><div aria-label="Goedgekeurd ontwerp konvooien" class="approved-banner"><img alt="TRUCKERS COMMUNITY — konvooien Japanse truckersposter" decoding="async" loading="lazy" src="area2-konvooien.webp"/></div><div class="poster-actions"><a href="#gids">Open de truckergids</a></div><div aria-hidden="true" class="section-atmosphere">🚛</div><div class="wrap"><figure class="v37-scene"><img alt="Japanse vrachtwagens – konvooien" decoding="async" loading="lazy" src="japan-scene-konvooien.webp"/></figure><div class="truck-spotlight"><img alt="Truck model VOLVO FH16" decoding="async" loading="lazy" src="truck-model-2.webp"/><span>🚛 VOLVO FH16 · JAPAN EDITION</span></div><div class="eyebrow">CONVOY CONTROL</div><div class="scene-caption">Samen de nacht tegemoet</div><h2 class="section-title">PLAN JE <span>VOLGENDE KONVOOI</span></h2><p class="sub">Kies een voorbeeldroute, stel een vertrektijd in en maak een uitnodiging om te delen.</p><div class="split"><div class="panel"><div class="route-tabs"><button class="active" data-route="benelux">Benelux</button><button data-route="alpen">Alpen</button><button data-route="amerika">Amerika</button></div><div class="eyebrow" id="routeGame">ETS2 · VOORBEELDROUTE</div><h3 class="route-name" id="routeName">Benelux Express</h3><p class="route-path" id="routePath">Rotterdam → Brussel → Luxemburg</p><p id="routeDesc">Spreek een verzamelplaats af buiten de drukke stad en laat ruimte tussen de trucks.</p></div><form class="panel" id="convoyForm"><h3>Maak een konvooi-uitnodiging</h3><label for="departure">Vertrekdatum en -tijd</label><input id="departure" required="" type="datetime-local"/><label for="meeting">Verzamelplek (optioneel)</label><input id="meeting" placeholder="Bijv. parkeerplaats bij de garage"/><button class="btn primary" style="margin-top:20px" type="submit">Maak uitnodiging ↗</button><div aria-live="polite" class="output" id="convoyOutput">Je uitnodiging verschijnt hier.</div><button class="btn" id="copyConvoy" type="button">Kopieer uitnodiging</button></form></div></div></section><section class="unified-area" id="gids"><div aria-label="Goedgekeurd ontwerp gids" class="approved-banner"><img alt="TRUCKERS COMMUNITY — gids Japanse truckersposter" decoding="async" loading="lazy" src="area3-gids.webp"/></div><div class="poster-actions"><a href="#truckstop">Ga naar het truckstop café</a></div><div aria-hidden="true" class="section-atmosphere">⚔️</div><div class="wrap"><figure class="v37-scene"><img alt="Japanse vrachtwagens – gids" decoding="async" loading="lazy" src="japan-scene-gids.webp"/></figure><div class="truck-spotlight"><img alt="Truck model MAN TGX" decoding="async" loading="lazy" src="truck-model-3.webp"/><span>🚛 MAN TGX · JAPAN EDITION</span></div><div class="eyebrow">DRIVER ACADEMY</div><div class="scene-caption">De code van de weg</div><h2 class="section-title">KLAAR VOOR <span>VERTREK?</span></h2><div class="faq"><details open=""><summary>Wat heb ik nodig om mee te rijden?</summary><p>Euro Truck Simulator 2 of American Truck Simulator. Spreek vooraf af welke multiplayerstand, mods en kaartuitbreidingen de groep gebruikt.</p></details><details><summary>Hoe rijd ik veilig in een konvooi?</summary><p>Houd afstand, volg de aanwijzingen van de konvooileider en meld pech of een gemiste afslag zodra je veilig kunt stoppen.</p></details><details><summary>Kan ik beginnen zonder ervaring?</summary><p>Ja. Oefen eerst een korte rit en leer je spiegels, cruisecontrol en richtingaanwijzers kennen.</p></details></div></div></section><section class="unified-area truckstop" id="truckstop"><div aria-label="Goedgekeurd ontwerp truckstop" class="approved-banner"><img alt="TRUCKERS COMMUNITY — truckstop Japanse truckersposter" decoding="async" loading="lazy" src="area4-truckstop.webp"/></div><div class="poster-actions"><a href="#community">Ontmoet de crew</a></div><div aria-hidden="true" class="section-atmosphere">☕</div><div class="wrap"><figure class="v37-scene"><img alt="Japanse vrachtwagens – truckstop" decoding="async" loading="lazy" src="japan-scene-truckstop.webp"/></figure><div class="truck-spotlight"><img alt="Truck model DAF XG+" decoding="async" loading="lazy" src="truck-model-4.webp"/><span>🚛 DAF XG+ · JAPAN EDITION</span></div><div class="eyebrow">MIDNIGHT TRUCKSTOP</div><div class="scene-caption">De crew komt samen</div><h2 class="section-title">TRUCKSTOP <span>CAFÉ</span> ☕</h2><p class="sub">Na een lange rit is het tijd om even te stoppen. Welkom in onze virtuele Japanse truckstop: de ontmoetingsplek voor de hele crew.</p><div class="truckstop-layout"><div aria-label="Japanse truckstop sfeer" class="cafe-scene" role="img"><img alt="Japanse truckstop met vrachtwagens" class="v33-scene-photo" loading="lazy" src="japan-scene-truckstop.webp"/></div><div class="cafe-feature"><h3>PAUZEER. ONTMOET. RIJD VERDER.</h3><p>Parkeer je truck, praat over je laatste rit, spreek een volgend konvooi af en geniet van de sfeer van een Japanse nachtelijke truckstop.</p><div class="cafe-perks"><span>☕ Virtuele koffiebar</span><span>🚛 Truckparking</span><span>🍜 Japanse diner-sfeer</span><span>🎮 Ontmoet de crew</span></div><div class="cafe-links"><a href="#community">🤝 Ontmoet de crew</a><a href="#konvooien">🚛 Plan een rit</a><a href="#gids">📖 Truckergids</a><a href="#chauffeur">⭐ Word chauffeur</a></div><a class="btn primary" href="#community">✦ Ontmoet de community</a><p class="cafe-note">Dit is een virtuele ontmoetingsplek op de website, geen echte horecazaak of bestelsysteem.</p></div></div></div></section><section class="unified-area" id="chauffeur"><div aria-label="Goedgekeurd ontwerp chauffeur" class="approved-banner"><img alt="TRUCKERS COMMUNITY — chauffeur Japanse truckersposter" decoding="async" loading="lazy" src="area5-chauffeur.webp"/></div><div class="poster-actions"><a href="#community">Bekijk onze crew</a></div><div aria-hidden="true" class="section-atmosphere">🐉</div><div class="wrap"><figure class="v37-scene"><img alt="Japanse vrachtwagens – chauffeur" decoding="async" loading="lazy" src="japan-scene-chauffeur.webp"/></figure><div class="truck-spotlight"><img alt="Truck model MERCEDES ACTROS" decoding="async" loading="lazy" src="truck-model-5.webp"/><span>🚛 MERCEDES ACTROS · JAPAN EDITION</span></div><div class="eyebrow">JOIN THE LEGENDS</div><div class="scene-caption">Jouw reis begint hier</div><h2 class="section-title">WORD <span>CHAUFFEUR</span></h2><div class="split"><div><p class="sub">Vul je gegevens in en verstuur je aanmelding naar de beheerder. Na verzenden opent FormSubmit. De beheerder moet de eenmalige e-mailkoppeling bevestigen.</p><div class="banner"><h3>⚡ SAMEN STERKER OP DE WEG</h3><p>Rijd mee, leer de community kennen en beleef de volgende konvooien.</p><a class="btn secondary" href="#community">Community bekijken</a></div></div><form action="https://formsubmit.co/casperfluffy00@gmail.com" class="panel" id="driverForm" method="POST"><input name="_subject" type="hidden" value="Nieuwe chauffeursaanmelding - Truckers Community"/><input name="_captcha" type="hidden" value="true"/><input name="_template" type="hidden" value="table"/><input name="aanvraag_type" type="hidden" value="driverForm"/><label for="gamer">Gamernaam</label><input id="gamer" maxlength="60" name="Gamernaam" placeholder="Jouw naam in de game" required=""/><label for="sim">Favoriete simulator</label><select id="sim" name="Simulator"><option>Euro Truck Simulator 2</option><option>American Truck Simulator</option><option>Allebei</option></select><label for="experience">Rijervaring</label><select id="experience" name="Rijervaring"><option>Beginner</option><option>Gevorderd</option><option>Ervaren chauffeur</option></select><button class="btn primary" style="margin-top:20px" type="submit">🚛 Verstuur chauffeursaanmelding</button><div aria-live="polite" class="output" id="driverOutput">Na klikken opent FormSubmit om je aanvraag te verwerken. Controleer de bevestigingspagina en de e-mailactivatie.</div><button class="btn" id="copyDriver" type="button">Kopieer tekst</button></form></div></div></section><section class="unified-area" id="community"><div aria-label="Goedgekeurd ontwerp community" class="approved-banner"><img alt="TRUCKERS COMMUNITY — community Japanse truckersposter" decoding="async" loading="lazy" src="area6-community.webp"/></div><div class="poster-actions"><a href="#chauffeur">Word chauffeur</a></div><div aria-hidden="true" class="section-atmosphere">🌸</div><div class="wrap"><figure class="v37-scene"><img alt="Japanse vrachtwagens – community" decoding="async" loading="lazy" src="japan-scene-community.webp"/></figure><div class="truck-spotlight"><img alt="Truck model KENWORTH W900" decoding="async" loading="lazy" src="truck-model-6.webp"/><span>🚛 KENWORTH W900 · JAPAN EDITION</span></div><div class="crew-area"><div class="eyebrow">LEGENDARY CREW</div><div class="scene-caption">Eén crew · Eén weg</div><h3 class="crew-heading">ONTMOET ONZE <span>CREW</span></h3><p class="sub">De chauffeurs van Truckers Community.</p><div class="crew-grid"><div class="crew-member"><div aria-hidden="true" class="crew-avatar">🚛</div><strong>Monkey D. Luffy</strong><small>bionicsnow</small></div><div class="crew-member"><div aria-hidden="true" class="crew-avatar">🚛</div><strong>Raceboy</strong><small>glenn028293</small></div><div class="crew-member"><div aria-hidden="true" class="crew-avatar">🚛</div><strong>Bompa Lawijt</strong><small>casper06794</small></div><div class="crew-member"><div aria-hidden="true" class="crew-avatar">🚛</div><strong>Dragonmaster</strong><small>djkenji_</small></div><div class="crew-member"><div aria-hidden="true" class="crew-avatar">🚛</div><strong>Truckerboy</strong><small>lefevresteven</small></div><div class="crew-member"><div aria-hidden="true" class="crew-avatar">🚛</div><strong>Mamakonijn</strong><small>badbunny_1989</small></div></div></div><div class="eyebrow">FIND YOUR CREW</div><h2 class="section-title">ONZE <span>COMMUNITY</span></h2><p class="sub">Ontmoet andere chauffeurs en deel je ritten. Sluit je aan bij onze Discord-server en ontmoet de crew.</p><div class="community-actions"><a href="#community">👥 Leden</a><a href="#konvooien">📅 Konvooien</a><a href="#gids">📖 Gids</a><a href="#recruiter">✉️ Contact</a></div><a class="btn secondary" href="https://discord.gg/Tk6hjMszDR" id="discordLink" target="_blank" rel="noopener noreferrer">✦ Naar Discord ↗</a></div></section><section class="unified-area recruiter-section" id="recruiter"><div aria-label="Goedgekeurd ontwerp recruiter" class="approved-banner"><img alt="TRUCKERS COMMUNITY — recruiter Japanse truckersposter" decoding="async" loading="lazy" src="area7-recruiter.webp"/></div><div class="poster-actions"><a href="#chauffeur">Aanmelden als chauffeur</a></div><div class="wrap"><figure class="v37-scene"><img alt="Japanse vrachtwagens – recruiter" decoding="async" loading="lazy" src="japan-scene-recruiter.webp"/></figure><div class="truck-spotlight"><img alt="Truck model PETERBILT 389" decoding="async" loading="lazy" src="truck-model-7.webp"/><span>🚛 PETERBILT 389 · JAPAN EDITION</span></div><div class="eyebrow">🟢 RECRUITMENT HQ · TRUCKERS COMMUNITY</div><h2 class="section-title">ONZE <span>RECRUITERS</span></h2><p class="sub">Vragen over de community of wil je als chauffeur aansluiten? Onze recruiters helpen je graag verder.</p><div class="community-actions"><a href="#chauffeur">🚛 Chauffeur worden</a><a href="#gids">📖 Voorwaarden</a><a href="#community">👥 Onze crew</a></div><div class="recruiter-layout"><div class="recruiter-visual"><img alt="Japanse recruiter vrachtwagenwereld" class="v33-scene-photo" loading="lazy" src="japan-scene-recruiter.webp"/><div class="recruiter-shield">🛡️</div><p>JOUW WEG NAAR DE CREW</p></div><div class="recruiter-info"><h3>WORD DEEL VAN DE CREW</h3><p>Heb je vragen over ETS2, ATS, konvooien of de community? Vul het formulier in en verstuur je aanvraag naar onze recruiter.</p><div class="recruiter-benefits"><span>🟢 Informatie &amp; begeleiding</span><span>🚛 Chauffeur worden</span><span>🤝 Contact met de crew</span><span>🎮 ETS2 &amp; ATS</span></div><form action="https://formsubmit.co/casperfluffy00@gmail.com" id="recruiterForm" method="POST"><input name="_subject" type="hidden" value="Nieuwe recruiter-aanvraag - Truckers Community"/><input name="_captcha" type="hidden" value="true"/><input name="_template" type="hidden" value="table"/><input name="aanvraag_type" type="hidden" value="recruiterForm"/><label for="recruitName">Jouw gamernaam</label><input id="recruitName" maxlength="60" name="Gamernaam" placeholder="Bijv. MijnTruckNaam" required=""/><label for="recruitReason">Waarmee kunnen we helpen?</label><select id="recruitReason" name="Onderwerp"><option>Ik wil chauffeur worden</option><option>Ik heb een vraag over konvooien</option><option>Ik wil meer informatie over de community</option><option>Andere vraag</option></select><label for="recruitMessage">Jouw bericht</label><textarea id="recruitMessage" maxlength="1000" name="Bericht" placeholder="Typ hier je vraag..." required="" rows="4"></textarea><button class="btn recruiter-btn" type="submit">🛡️ Verstuur recruiter-aanvraag</button><div aria-live="polite" class="output" id="recruitOutput">Na klikken opent FormSubmit om je aanvraag te verwerken. Controleer de bevestigingspagina en de e-mailactivatie.</div><button class="btn secondary" id="copyRecruit" type="button">📋 Kopieer bericht</button><a class="btn primary" href="#chauffeur">🚛 Chauffeursaanmelding</a></form><p class="recruiter-disclaimer">Na het verzenden opent FormSubmit. De beheerder moet de e-mailkoppeling bevestigen voordat berichten worden afgeleverd. Er wordt niets automatisch naar Discord verstuurd.</p></div></div></div></section><div aria-label="Oorspronkelijke recruiter-afbeelding" class="v34-bottom-art"><img alt="Recruiter Japan Edition — oorspronkelijke onderste afbeelding" loading="lazy" src="area7-recruiter.webp"/></div></main><footer class="foot"><div class="wrap">🐉 TRUCKERS COMMUNITY — JAPAN EDITION · ETS2 &amp; ATS · <a href="#home-showcase">Terug naar boven ↑</a></div></footer><script>
+// Vul hier de ECHTE Discord-link in, bijvoorbeeld https://discord.gg/jouwcode
+const DISCORD_URL='https://discord.gg/Tk6hjMszDR';const discord=document.getElementById('discordLink');if(DISCORD_URL){discord.href=DISCORD_URL;discord.textContent='✦ Naar Discord ↗';discord.target='_blank';discord.rel='noopener noreferrer'}
+const routes={benelux:['ETS2 · VOORBEELDROUTE','Benelux Express','Rotterdam → Brussel → Luxemburg','Spreek een verzamelplaats af buiten de drukke stad en laat ruimte tussen de trucks.'],alpen:['ETS2 · VOORBEELDROUTE','Alpen Challenge','München → Innsbruck → Verona','Een bergroute met bochten en prachtige uitzichten.'],amerika:['ATS · VOORBEELDROUTE','Pacific Highway','Los Angeles → San Francisco → Sacramento','Rijd langs de kust en door Californische steden.']};let selected='benelux';document.querySelectorAll('[data-route]').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.route;document.querySelectorAll('[data-route]').forEach(x=>x.classList.toggle('active',x===b));['routeGame','routeName','routePath','routeDesc'].forEach((id,i)=>document.getElementById(id).textContent=routes[selected][i])}));
+document.getElementById('convoyForm').addEventListener('submit',e=>{e.preventDefault();let d=document.getElementById('departure').value;let date=new Date(d);let when=isNaN(date)?d:date.toLocaleString('nl-BE',{dateStyle:'full',timeStyle:'short'});document.getElementById('convoyOutput').textContent='🚛 TRUCKERS COMMUNITY — KONVOOI\nRoute: '+routes[selected][1]+'\nTraject: '+routes[selected][2]+'\nVertrek: '+when+'\nVerzamelplek: '+(document.getElementById('meeting').value.trim()||'Nog af te spreken')+'\nTot op de weg!'});async function copy(id){const value=document.getElementById(id).textContent;try{await navigator.clipboard.writeText(value);alert('Tekst gekopieerd!')}catch{alert('Selecteer en kopieer de tekst handmatig.')}}document.getElementById('copyConvoy').addEventListener('click',()=>copy('convoyOutput'));document.getElementById('copyDriver').addEventListener('click',()=>copyFormDetails('driverForm','driverOutput','Chauffeursaanmelding'));if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){const p=document.getElementById('petals');for(let i=0;i<16;i++){let el=document.createElement('span');el.className='sakura';el.textContent='🌸';el.style.setProperty('--x',Math.random()*100+'%');el.style.setProperty('--s',10+Math.random()*10+'px');el.style.setProperty('--d',9+Math.random()*12+'s');el.style.setProperty('--delay',-Math.random()*20+'s');p.appendChild(el)}}
+</script><script>document.querySelector('.mobile-menu')?.addEventListener('click',function(){const nav=document.querySelector('header nav');const open=nav.classList.toggle('nav-open');this.setAttribute('aria-expanded',String(open));this.textContent=open?'✕ Sluiten':'☰ Menu'});document.querySelectorAll('header nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('header nav')?.classList.remove('nav-open');const menu=document.querySelector('.mobile-menu');if(menu){menu.setAttribute('aria-expanded','false');menu.textContent='☰ Menu'}}));</script><script>
+
+// Kopieer echte ingevulde formuliergegevens, niet de standaard hulptekst.
+async function copyFormDetails(formId, outputId, heading){
+ const form=document.getElementById(formId);
+ const fields=[...form.querySelectorAll('input:not([type="hidden"]), select, textarea')];
+ const lines=fields.map(field=>{
+   const label=form.querySelector('label[for="'+field.id+'"]');
+   return (label?label.textContent.trim():field.name)+': '+field.value.trim();
+ });
+ if(fields.some(field=>field.required&&!field.value.trim())){
+   alert('Vul eerst alle verplichte velden in.');return;
+ }
+ const message='🚛 TRUCKERS COMMUNITY — '+heading+'\n'+lines.join('\n');
+ const output=document.getElementById(outputId);
+ try{
+   if(!navigator.clipboard || !navigator.clipboard.writeText)throw Error('Clipboard niet beschikbaar');
+   await navigator.clipboard.writeText(message);
+   output.textContent=message;
+   alert(heading+' gekopieerd!');
+ }catch(err){
+   const textarea=document.createElement('textarea');
+   textarea.value=message;textarea.style.position='fixed';textarea.style.opacity='0';
+   document.body.appendChild(textarea);textarea.focus();textarea.select();
+   let copied=false;try{copied=document.execCommand('copy')}catch(e){}
+   textarea.remove();
+   if(copied){output.textContent=message;alert(heading+' gekopieerd!');}
+   else{output.textContent=message;alert('Automatisch kopiëren lukte niet. Selecteer de tekst onder de knop en kopieer met Ctrl+C.');}
+ }
+}
+const rf=document.getElementById('recruiterForm');
+document.getElementById('copyRecruit').addEventListener('click',()=>copyFormDetails('recruiterForm','recruitOutput','Recruiterbericht'));
+</script><script>
+// Standard browser form submission to FormSubmit; confirmation happens on their website.
+</script><script>
+// V45: Alle Recruiter-klikvlakken op de homepage en in de navigatie
+// gaan onmiddellijk naar het begin van Area 7, zonder Area 6 te tonen.
+document.querySelectorAll('a[href="#recruiter"]').forEach(function(link){
+ link.addEventListener('click',function(event){
+  event.preventDefault();
+  const target=document.getElementById('recruiter');
+  if(!target)return;
+  const root=document.documentElement;
+  const previous=root.style.scrollBehavior;
+  root.style.scrollBehavior='auto';
+  const header=document.querySelector('header');
+  const offset=header && getComputedStyle(header).display!=='none' ? header.getBoundingClientRect().height : 0;
+  window.scrollTo(0,Math.max(0,target.getBoundingClientRect().top+window.scrollY-offset));
+  history.replaceState(null,'','#recruiter');
+  requestAnimationFrame(()=>{root.style.scrollBehavior=previous;});
+ });
+});
+</script></body></html>

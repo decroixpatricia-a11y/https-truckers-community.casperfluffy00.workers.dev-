@@ -1,0 +1,1 @@
+TRUCKERS COMMUNITY V15 - Achtergronden scherper en lichter, zonder zoom. De bovenste showcase is niet aangepast. Upload alle bestanden samen; test lokaal met index.html. FormSubmit verzending niet live getest.
